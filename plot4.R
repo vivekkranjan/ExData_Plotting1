@@ -24,8 +24,6 @@ par(mfrow  =  c(2, 2))
 
 plot(dateTime, globalActivePower, type = "l", xlab = "", ylab = "Global Active Power", cex = 0.2)
 
-dev.off()
-
 plot(dateTime, voltage, type = "l", xlab = "dateTime", ylab = "Voltage")
 
 plot(dateTime, subMetering1, type = "l", ylab = "Energy Submetering", xlab = "")
@@ -38,3 +36,4 @@ legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty 
 
 plot(dateTime, globalReactivePower, type = "l", xlab = "dateTime", ylab = "Global_reactive_power")
 
+dev.off()
