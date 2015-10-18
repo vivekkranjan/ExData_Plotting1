@@ -24,6 +24,8 @@ par(mfrow  =  c(2, 2))
 
 plot(dateTime, globalActivePower, type = "l", xlab = "", ylab = "Global Active Power", cex = 0.2)
 
+dev.off()
+
 plot(dateTime, voltage, type = "l", xlab = "dateTime", ylab = "Voltage")
 
 plot(dateTime, subMetering1, type = "l", ylab = "Energy Submetering", xlab = "")
